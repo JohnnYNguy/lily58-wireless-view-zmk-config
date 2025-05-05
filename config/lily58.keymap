@@ -92,7 +92,7 @@
             label = "Media";
         };
 
-        layer_4 {
+        MAC_LAYER {
             bindings = <
 &trans    &trans  &trans  &trans    &trans            &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans    &trans  &trans  &trans    &trans            &trans                    &trans  &trans  &trans  &trans  &trans  &trans
@@ -100,6 +100,8 @@
 &kp LGUI  &trans  &trans  &trans    &trans            &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                           &kp LALT  &kp LEFT_CONTROL  &trans  &trans    &trans  &trans  &trans  &trans
             >;
+
+            label = "Mac";
         };
     };
 };
