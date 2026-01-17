@@ -12,7 +12,7 @@
     combos {
         compatible = "zmk,combos";
 
-        Enter-Combo {
+        Enter_Combo {
             bindings = <&kp ENTER>;
             key-positions = <53 54>;
         };
@@ -20,6 +20,11 @@
         Toggle_Mac_Combo {
             bindings = <&tog 4>;
             key-positions = <52 55>;
+        };
+
+        Genshin_Combo {
+            bindings = <&tog 5>;
+            key-positions = <49 36>;
         };
     };
 
@@ -102,6 +107,16 @@
             >;
 
             label = "Mac";
+        };
+
+        Genshin {
+            bindings = <
+&trans        &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_ALT  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
